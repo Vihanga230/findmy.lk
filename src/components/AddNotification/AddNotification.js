@@ -50,9 +50,9 @@ const AddNotification = (props) => {
         <Button onClick={props.openCart} level={'secondary'}>
           view my bag (1)
         </Button>
-        <Button level="primary" href="/cart">
-          checkout
-        </Button>
+        <Button onClick={() => window.location.href = 'https://buy.stripe.com/test_aEU9Bl8zagyAemAfYY'} level={'primary'} fullWidth>
+  Checkout
+</Button>
         <div className={styles.linkContainer}>
           <Link to={'/shop'}>continue shopping</Link>
         </div>
