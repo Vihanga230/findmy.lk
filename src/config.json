@@ -24,20 +24,25 @@
   },
   "footerLinks": [
     {
-      "subTitle": "Info",
+      "subTitle": "Information",
       "links": [
         {
-          "text": "About Us",
-          "link": "/about"
+          "text": "Shop",
+          "link": "/shop"
         },
         {
-          "text": "Journal",
-          "link": "/blog"
+          "text": "About us",
+          "link": "/about"
         },
         {
           "text": "Privacy Policy",
           "link": "/support#policy"
+        },
+        {
+          "text": "Terms & Conditions",
+          "link": "/support#terms"
         }
+        
       ]
     },
     {
@@ -50,19 +55,17 @@
         {
           "text": "Contact Us",
           "link": "/support#contact"
-        },
-        {
-          "text": "Shipping & Returns",
-          "link": "/support#returns"
-        },
-        {
-          "text": "How to use this theme",
-          "link": "/how-to-use"
         }
+      
       ]
     }
   ],
   "headerLinks": [
+    {
+      "menuLabel": "Home",
+      "menuLink": "/",
+      "category": null
+    },
     {
       "menuLabel": "Shop",
       "menuLink": "/shop",
@@ -129,7 +132,7 @@
       ]
     },
     {
-      "menuLabel": "IN",
+      "menuLabel": "INSTALLATION GUIDE PAGE  ",
       "menuLink": "/blog",
       "category": null
     },
