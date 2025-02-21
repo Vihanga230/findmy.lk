@@ -10,6 +10,7 @@ import ProductCollectionGrid from '../components/ProductCollectionGrid';
 import ProductCardGrid from '../components/ProductCardGrid';
 import Quote from '../components/Quote';
 import Title from '../components/Title';
+import img9 from '../assets/images/trc.jpg';
 
 import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
 
@@ -29,10 +30,10 @@ const IndexPage = () => {
     <Layout disablePaddingBottom>
       {/* Hero Container */}
       <Hero
-        maxWidth={'500px'}
-        image={'/banner1.png'}
-        title={'Essentials for a cold winter'}
-        subtitle={'Discover Autumn Winter 2021'}
+        maxWidth={'700px'}
+        image={img9}
+        title={'Find Fast. Find Easy. Find My. '}
+        subtitle={'Discover the Best Apple Find My Compatible Trackers '}
         ctaText={'shop now'}
         ctaAction={goToShop}
       />
@@ -40,19 +41,19 @@ const IndexPage = () => {
       {/* Message Container */}
       <div className={styles.messageContainer}>
         <p>
-          This is a demonstration of the Sydney theme for verse by{' '}
-          <span className={styles.gold}>matter design.</span>
+        Select what you want to track {' '}
+          <span className={styles.gold}> and </span>
         </p>
         <p>
-          wear by <span className={styles.gold}>sunspel</span> and{' '}
-          <span className={styles.gold}>scotch&soda</span>
+        get the best Find <span className={styles.gold}></span>{' '}
+          <span className={styles.gold}>My trackers!</span>
         </p>
       </div>
 
       {/* Collection Container */}
       <div className={styles.collectionContainer}>
         <Container size={'large'}>
-          <Title name={'New Collection'} />
+        <Title font="Montserrat" color="#FF6F00" name={'Collection'} />
           <ProductCollectionGrid />
         </Container>
       </div>
@@ -60,8 +61,11 @@ const IndexPage = () => {
       {/* New Arrivals */}
       <div className={styles.newArrivalsContainer}>
         <Container>
-          <Title name={'New Arrivals'} link={'/shop'} textLink={'view all'} />
-          <ProductCardGrid
+        <Title 
+  name={<span style={{ color: '#FF6F00' }}>{'Popular Products '}</span>} 
+  link={'/shop'} 
+  textLink={'view all'} 
+/>          <ProductCardGrid
             spacing={true}
             showSlider
             height={480}
@@ -72,7 +76,7 @@ const IndexPage = () => {
       </div>
 
       {/* Highlight  */}
-      <div className={styles.highlightContainer}>
+      {/* <div className={styles.highlightContainer}>
         <Container size={'large'} fullMobile>
           <Highlight
             image={'/highlight.png'}
@@ -85,41 +89,42 @@ const IndexPage = () => {
             link={'/shop'}
           />
         </Container>
-      </div>
+      </div> */}
 
       {/* Promotion */}
-      <div className={styles.promotionContainer}>
+      {/* <div className={styles.promotionContainer}>
         <Hero image={toOptimizedImage('/banner2.png')} title={`-50% off \n All Essentials`} />
         <div className={styles.linkContainers}>
           <Link to={'/shop'}>WOMAN</Link>
           <Link to={'/shop'}>MAN</Link>
         </div>
-      </div>
+      </div> */}
 
       {/* Quote */}
       <Quote
+      
         bgColor={'var(--standard-light-grey)'}
-        title={'about Sydney'}
+        title={'ABOUT FINDMY.LK '}
         quote={
-          '“We believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
+          'Our belief is knowing where everything you care about is at gives you peace of mind without wasting time. Keep everything that matters to you close with these amazing trackers.  believe in two things: the pursuit of quality in everything we do, and looking after one another. Everything else should take care of itself.”'
         }
       />
 
       {/* Blog Grid */}
-      <div className={styles.blogsContainer}>
+      {/* <div className={styles.blogsContainer}>
         <Container size={'large'}>
           <Title name={'Journal'} subtitle={'Notes on life and style'} />
           <BlogPreviewGrid data={blogData} />
         </Container>
-      </div>
+      </div> */}
 
       {/* Promotion */}
       <div className={styles.sustainableContainer}>
         <Hero
           image={toOptimizedImage('/banner3.png')}
-          title={'We are Sustainable'}
+          title={'Our Vision '}
           subtitle={
-            'From caring for our land to supporting our people, discover the steps we’re taking to do more for the world around us.'
+            'To be Sri Lanka’s most trusted online discovery platform.'
           }
           ctaText={'read more'}
           maxWidth={'660px'}
@@ -128,7 +133,7 @@ const IndexPage = () => {
       </div>
 
       {/* Social Media */}
-      <div className={styles.socialContainer}>
+      {/* <div className={styles.socialContainer}>
         <Title
           name={'Styled by You'}
           subtitle={'Tag @sydney to be featured.'}
@@ -139,7 +144,7 @@ const IndexPage = () => {
           <img src={toOptimizedImage(`/social/socialMedia3.png`)} alt={'social media 3'} />
           <img src={toOptimizedImage(`/social/socialMedia4.png`)} alt={'social media 4'} />
         </div>
-      </div>
+      </div> */}
       <AttributeGrid />
     </Layout>
   );

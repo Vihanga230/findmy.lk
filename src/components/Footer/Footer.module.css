@@ -1,8 +1,10 @@
+/* Root Container */
 .root {
     background-color: var(--bg-dark);
     padding-bottom: 50px;
 }
 
+/* Content Area */
 .content {
     padding-top: 72px;
     padding-bottom: 40px;
@@ -13,6 +15,7 @@
     grid-template-columns: 0.25fr 0.25fr 0.5fr;
 }
 
+/* Newsletter Section */
 .newsLetter {
     display: flex;
     justify-content: flex-end;
@@ -26,6 +29,7 @@
     font-size: 14px;
 }
 
+/* Link List */
 .linkList {
     list-style-type: none;
     margin: 0;
@@ -33,7 +37,7 @@
     font-size: 14px;
 }
 
-.link{
+.link {
     color: var(--standard-white);
     margin-bottom: 12px;
     display: inline-block;
@@ -59,16 +63,19 @@
     width: 100%;
 }
 
+/* Promo Message */
 .promoMessage {
     color: var(--standard-white);
     justify-self: end;
 }
 
+/* Newsletter Form */
 .newsLetterForm {
     margin-top: 38px;
     margin-bottom: 80px;
 }
 
+/* Social Icons */
 .socialContainer {
     width: 100%;
     display: flex;
@@ -79,7 +86,6 @@
     color: var(--standard-white);
     display: flex;
     align-items: center;
-
     margin-right: 28px;
     padding: 10px;
     border-radius: 50%;
@@ -96,6 +102,7 @@
     height: 16px;
 }
 
+/* Content Bottom Container */
 .contentBottomContainer {
     border-top: 1px solid var(--standard-dark-grey);
 }
@@ -106,6 +113,7 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* Settings */
 .settings {
     display: flex;
 }
@@ -118,6 +126,7 @@
     margin-right: 16px;
 }
 
+/* Credit Card Section */
 .creditCardContainer {
     display: flex;
     align-items: center;
@@ -146,13 +155,14 @@
     height: 14px;
 }
 
+/* Copyright Section */
 .copyrightContainer {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
 }
 
-.copyrightContainer span{
+.copyrightContainer span {
     color: var(--standard-white);
     display: block;
     margin-top: 32px;
@@ -164,10 +174,12 @@
     color: var(--standard-white);
 }
 
+/* Mobile Footer Links */
 .mobileFooterLinks {
     display: none;
 }
 
+/* Accordion Title */
 .accordionTitle {
     font-weight: 500;
     font-size: 18px;
@@ -176,16 +188,19 @@
     text-transform: capitalize;
 }
 
+/* Icon Container */
 .iconContainer {
     color: var(--standard-white);
 }
 
+/* Social Icon Hover Effect */
 @media (hover: hover) {
     .socialIconContainer:hover {
-        background-color: var(--standard-dark-grey)
+        background-color: var(--standard-dark-grey);
     }
 }
 
+/* Mobile Styles */
 @media (max-width: 800px) {
     .contentTop {
         display: grid;

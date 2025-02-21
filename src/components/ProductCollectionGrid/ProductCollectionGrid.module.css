@@ -1,14 +1,172 @@
+/* Root Container */
 .root {
     width: 100%;
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
 }
 
+/* Responsive Styles for Mobile */
 @media (max-width: 800px) {
     .root {
         grid-template-columns: 1fr;
     }
+}
+
+/* Collection Container */
+.collectionContainer {
+    margin-top: 8px;
+}
+
+/* Promotion Section */
+.promotionContainer {
+    position: relative;
+}
+
+.promotionContainer h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 52px;
+    line-height: 62px;
+    color: #333333;
+}
+
+/* Message Section */
+.messageContainer {
+    text-align: center;
+    padding: 60px 0px;
+    margin: 0px 30px;
+}
+
+.messageContainer p {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+}
+
+.gold {
+    color: #FF6F00;
+}
+
+/* Content Title */
+.contentTitle {
+    text-align: center;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* New Arrivals Section */
+.newArrivalsContainer {
+    margin-top: 64px;
+}
+
+/* Highlight Section */
+.highlightContainer {
+    margin: 88px 0px;
+}
+
+/* Link Containers */
+.linkContainers {
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    bottom: 64px;
+    left: 50%;
+    gap: 72px;
+}
+
+.ctaCustomButton {
+    margin-top: 50px;
+}
+
+.linkContainers a {
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.linkContainers a:hover {
+    color: #FF6F00;
+    border-bottom: 1px solid #FF6F00;
+}
+
+/* Blogs Section */
+.blogsContainer {
+    margin-top: 96px;
+}
+
+/* Sustainable Section */
+.sustainableContainer {
+    margin: 96px 40px 0px 40px;
+}
+
+/* Social Section */
+.socialContainer {
+    margin-top: 64px;
+}
+
+.socialContentGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.socialContentGrid img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Mobile Styles */
+@media (max-width: 800px) {
+    .sustainableContainer {
+        margin: 96px 0px 0px 0px;
+    }
+
+    .socialContentGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .highlightContainer {
+        margin: 88px 0px 40px 0px;
+    }
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #FF6F00;  /* Orange */
+    --secondary-dark-gray: #333333; /* Dark Gray */
+    --white: #FFFFFF; /* White */
+    --light-gray: #F5F5F5; /* Light Gray */
+    --black: #000000; /* Black */
+}
+
+/* Typography */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: var(--secondary-dark-gray);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--secondary-dark-gray);
 }

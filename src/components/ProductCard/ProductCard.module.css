@@ -1,16 +1,20 @@
+/* Root Container */
 .root {
     width: 100%;
 }
 
+/* Details Container */
 .detailsContainer {
     margin-top: 16px;
 }
 
+/* Image Container */
 .imageContainer {
     position: relative;
     cursor: pointer;
 }
 
+/* Image Style */
 .root img {
     display: block;
     width: 100%;
@@ -18,12 +22,14 @@
     border-radius: 1px;
 }
 
+/* Product Name */
 .productName {
     font-size: 14px;
     line-height: 17px;
     color: var(--standard-black);
 }
 
+/* Price Styles */
 .prices {
     margin-top: 8px;
     font-size: 14px;
@@ -45,6 +51,7 @@
     color: var(--grey-placeholder);
 }
 
+/* Meta (Description or Additional Info) */
 .meta {
     font-size: 14px;
     line-height: 17px;
@@ -55,11 +62,11 @@
     margin-right: 16px;
 }
 
+/* Bag Icon */
 .bagContainer {
     position: absolute;
     bottom: 0px;
     right: 0px;
-
     width: 70px;
     height: 70px;
     background-color: var(--standard-white);
@@ -78,6 +85,7 @@
     visibility: visible;
 }
 
+/* Heart Icon */
 .heartContainer {
     position: absolute;
     top: 32px;
@@ -93,6 +101,7 @@
     visibility: visible;
 }
 
+/* Heart Fill Icon */
 .heartFillContainer {
     position: absolute;
     top: 0px;
@@ -102,11 +111,12 @@
     transition: opacity 0.3s ease-in-out;
 }
 
-.heartFillContainer svg{
+.heartFillContainer svg {
     width: 20px;
     height: 20px;
 }
 
+/* Show and Hide States */
 .show {
     visibility: visible;
     opacity: 1;
@@ -117,7 +127,9 @@
     opacity: 0;
 }
 
+/* Media Queries */
 @media (max-width: 800px) {
+    /* Show Bag and Heart Icons on Mobile */
     .bagContainer {
         opacity: 1;
         visibility: visible;
@@ -130,10 +142,12 @@
 }
 
 @media (max-width: 600px) {
-    .imageContainer img{
+    /* Image Style on Smaller Screens */
+    .imageContainer img {
         height: 300px !important;
     }
 
+    /* Smaller Text for Mobile */
     .productName {
         font-weight: normal;
         font-size: 13px;
@@ -147,10 +161,12 @@
 }
 
 @media (max-width: 400px) {
-    .imageContainer img{
+    /* Image Style on Smaller Mobile Screens */
+    .imageContainer img {
         height: 220px !important;
     }
 
+    /* Adjust Bag Icon Size */
     .bagContainer {
         width: 40px;
         height: 40px;
@@ -161,6 +177,7 @@
         height: 20px;
     }
 
+    /* Adjust Heart Icon Position */
     .heartContainer {
         top: 32px;
         right: 16px;

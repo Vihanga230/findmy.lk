@@ -1,7 +1,9 @@
+/* Root Container */
 .root {
-
+    /* No styles applied to .root here */
 }
 
+/* Card Grid Layout */
 .cardGrid {
     width: 100%;
     margin: 0 auto;
@@ -9,26 +11,31 @@
     gap: 56px 32px;
 }
 
+/* Mobile Slider */
 .mobileSlider {
     display: none;
 }
 
+/* Show Class */
 .show {
     display: grid !important;
 }
 
+/* Mobile Styles */
 @media (max-width: 800px) {
+    /* Mobile Slider */
     .mobileSlider {
         display: block;
     }
 
+    /* Card Grid */
     .cardGrid {
         display: none;
     }
 
+    /* Show Class in mobile */
     .show {
         grid-template-columns: 1fr 1fr !important;
         gap: 24px 12px;
     }
 }
-

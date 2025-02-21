@@ -36,9 +36,9 @@ const MiniCart = (props) => {
           <span className={styles.taxNotes}>
             Taxes and shipping will be calculated at checkout
           </span>
-          <Button onClick={() => navigate('/cart')} level={'primary'} fullWidth>
-            checkout
-          </Button>
+          <Button onClick={() => window.location.href = 'https://buy.stripe.com/test_aEU9Bl8zagyAemAfYY'} level={'primary'} fullWidth>
+  Checkout
+</Button>
           <div className={styles.linkContainer}>
             <Link to={'/shop'}>continue shopping</Link>
           </div>

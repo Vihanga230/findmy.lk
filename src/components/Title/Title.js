@@ -9,9 +9,10 @@ const Title = (props) => {
     link,
     textLink,
     maxWidth,
-    color = 'var(--standard-black)',
+    color = '#FF6F00',  // Default color to orange
     hideSubtitleOnMobile = false,
     marginBottom = '32px',
+    font = 'Montserrat', // Default font to Montserrat
   } = props;
 
   return (
@@ -21,7 +22,10 @@ const Title = (props) => {
       }`}
       style={{ maxWidth: maxWidth, marginBottom: marginBottom }}
     >
-      <h2 className={styles.title} style={{ color: color }}>
+      <h2
+        className={styles.title}
+        style={{ color: color, fontFamily: font }} // Applying dynamic color and font
+      >
         {name}
       </h2>
       {subtitle && <span className={`${styles.subtitle}`}>{subtitle}</span>}

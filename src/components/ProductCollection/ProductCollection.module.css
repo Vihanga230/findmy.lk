@@ -1,10 +1,9 @@
+/* Root Container */
 .root {
     width: 100%;
     min-height: 630px;
-
     background-size: cover;
     background-repeat: no-repeat;
-
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -14,13 +13,12 @@
     transition: color 0.3s ease-in-out;
 }
 
-
+/* Content Section */
 .content {
     position: absolute;
     bottom: 75px;
     left: 55px;
     color: var(--standard-white);
-
     z-index: 10;
 }
 
@@ -44,6 +42,7 @@
     color: var(--standard-gold);
 }
 
+/* Overlay Section */
 .overlay {
     width: 100%;
     min-height: 630px;
@@ -62,6 +61,7 @@
     visibility: visible;
 }
 
+/* Mobile Styles */
 @media (max-width: 800px) {
     .root {
         min-height: 330px;
@@ -73,10 +73,40 @@
     }
 
     .title {
-        margin-bottom:16px;
+        margin-bottom: 16px;
     }
 
     .overlay {
         min-height: 100%;
     }
+}
+
+/* Color Palette */
+:root {
+    --primary-color: #FF6F00;  /* Orange */
+    --secondary-dark-gray: #333333; /* Dark Gray */
+    --white: #FFFFFF; /* White */
+    --light-gray: #F5F5F5; /* Light Gray */
+    --black: #000000; /* Black */
+}
+
+/* Typography */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: var(--secondary-dark-gray);
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--secondary-dark-gray);
 }
