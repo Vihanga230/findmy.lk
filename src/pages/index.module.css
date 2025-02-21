@@ -1,21 +1,27 @@
+/* Root Container */
 .root {
-
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* Collection Container */
 .collectionContainer {
     margin-top: 8px;
 }
 
+/* Promotion Section */
 .promotionContainer {
     position: relative;
 }
 
 .promotionContainer h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 52px;
     line-height: 62px;
+    color: #333333;
 }
 
-
+/* Message Section */
 .messageContainer {
     text-align: center;
     padding: 60px 0px;
@@ -31,25 +37,30 @@
 }
 
 .gold {
-    color: var(--standard-gold);
+    color: #FF6F00;
 }
 
-.contentTitle{
+/* Content Title */
+.contentTitle {
     text-align: center;
     font-weight: normal;
     font-size: 42px;
     line-height: 50px;
     margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* New Arrivals Section */
 .newArrivalsContainer {
     margin-top: 64px;
 }
 
+/* Highlight Section */
 .highlightContainer {
     margin: 88px 0px;
 }
 
+/* Link Containers */
 .linkContainers {
     display: flex;
     position: absolute;
@@ -64,28 +75,32 @@
 }
 
 .linkContainers a {
-    color: var(--standard-white);
-    border-bottom: 1px solid var(--standard-white);
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .linkContainers a:hover {
-    color: var(--standard-gold);
-    border-bottom: 1px solid var(--standard-gold);
+    color: #FF6F00;
+    border-bottom: 1px solid #FF6F00;
 }
 
+/* Blogs Section */
 .blogsContainer {
     margin-top: 96px;
 }
 
+/* Sustainable Section */
 .sustainableContainer {
     margin: 96px 40px 0px 40px;
 }
 
+/* Social Section */
 .socialContainer {
     margin-top: 64px;
 }
@@ -100,6 +115,7 @@
     object-fit: cover;
 }
 
+/* Mobile Styles */
 @media (max-width: 800px) {
     .sustainableContainer {
         margin: 96px 0px 0px 0px;
@@ -113,3 +129,92 @@
         margin: 88px 0px 40px 0px;
     }
 }
+
+/* Color Palette */
+:root {
+    --primary-color: #FF6F00;  /* Orange */
+    --secondary-dark-gray: #333333; /* Dark Gray */
+    --white: #FFFFFF; /* White */
+    --light-gray: #F5F5F5; /* Light Gray */
+    --black: #000000; /* Black */
+}
+
+/* Typography */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: var(--secondary-dark-gray);
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--secondary-dark-gray);
+}
+.quoteContainer {
+    background-color: var(--standard-light-grey);
+    color: var(--standard-black);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif; /* Set Open Sans as the body font */
+}
+
+.quoteContainer h2 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif; /* Set Montserrat as the font for the title */
+    font-weight: bold;
+    color: var(--standard-orange); /* Title color */
+    margin-bottom: 16px;
+}
+
+.quoteContainer p {
+    font-weight: 500;
+    color: var(--standard-black);
+    margin: 0;
+}
+
+.quoteContainer span {
+    color: var(--standard-gold);
+    font-weight: bold;
+    display: block;
+    margin-top: 12px;
+}
+
+@media (max-width: 800px) {
+    .quoteContainer {
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    .quoteContainer h2 {
+        font-size: 20px;
+    }
+}
+.collectionContainer {
+    /* Add styling for the container, if needed */
+    padding: 32px 0;
+  }
+  
+  .title {
+    color: #FF6F00; /* Apply the orange color */
+    font-family: 'Montserrat', sans-serif; /* Ensure the font matches */
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 44px;
+    margin-bottom: 16px;
+  }

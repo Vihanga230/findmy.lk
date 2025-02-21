@@ -10,6 +10,7 @@ import ProductCollectionGrid from '../components/ProductCollectionGrid';
 import ProductCardGrid from '../components/ProductCardGrid';
 import Quote from '../components/Quote';
 import Title from '../components/Title';
+import img9 from '../assets/images/trc.jpg';
 
 import { generateMockBlogData, generateMockProductData } from '../helpers/mock';
 
@@ -30,7 +31,7 @@ const IndexPage = () => {
       {/* Hero Container */}
       <Hero
         maxWidth={'700px'}
-        image={'/banner1.png'}
+        image={img9}
         title={'Find Fast. Find Easy. Find My. '}
         subtitle={'Discover the Best Apple Find My Compatible Trackers '}
         ctaText={'shop now'}
@@ -52,7 +53,7 @@ const IndexPage = () => {
       {/* Collection Container */}
       <div className={styles.collectionContainer}>
         <Container size={'large'}>
-          <Title name={'Collection'} />
+        <Title font="Montserrat" color="#FF6F00" name={'Collection'} />
           <ProductCollectionGrid />
         </Container>
       </div>
@@ -60,8 +61,11 @@ const IndexPage = () => {
       {/* New Arrivals */}
       <div className={styles.newArrivalsContainer}>
         <Container>
-          <Title name={'Popular Products '} link={'/shop'} textLink={'view all'} />
-          <ProductCardGrid
+        <Title 
+  name={<span style={{ color: '#FF6F00' }}>{'Popular Products '}</span>} 
+  link={'/shop'} 
+  textLink={'view all'} 
+/>          <ProductCardGrid
             spacing={true}
             showSlider
             height={480}
@@ -98,6 +102,7 @@ const IndexPage = () => {
 
       {/* Quote */}
       <Quote
+      
         bgColor={'var(--standard-light-grey)'}
         title={'ABOUT FINDMY.LK '}
         quote={
