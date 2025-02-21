@@ -14,44 +14,44 @@ const ProductCollectionGrid = (props) => {
     <div className={styles.root}>
       <ProductCollection
         image={Img7}
-        title={'Vehicle Tracking'}
-        text={'SHOP NOW'}
+        title={<span style={{ color: '#F5F5F5' }}>{'Vehicle Tracking'}</span>}
+        text={<span style={{ color: '#FF6F00' }}>{'SHOP NOW'}</span>} 
         link={'/shop'}
       />
       <ProductCollection
         image={Img1}
-        title={'Pet Tracking'}
-        text={'SHOP NOW'}
+        title={<span style={{ color: '#F5F5F5' }}>{'Pet Tracking'}</span>}
+        text={<span style={{ color: '#FF6F00' }}>{'SHOP NOW'}</span>} 
         link={'/shop'}
       />
       <ProductCollection
         image={Img2}
-        title={'Child/Elderlt Tracking'}
-        text={'SHOP NOW'}
+        title={<span style={{ color: '#F5F5F5' }}>{'Child/Elderlt Tracking'}</span>}
+        text={<span style={{ color: '#FF6F00' }}>{'SHOP NOW'}</span>} 
         link={'/shop'}
       />
       <ProductCollection
         image={Img3}
-        title={'Key Tracking'}
-        text={'SHOP NOW'}
+        title={<span style={{ color: '#F5F5F5' }}>{'Key Tracking'}</span>}
+        text={<span style={{ color: '#FF6F00' }}>{'SHOP NOW'}</span>} 
         link={'/shop'}
       />
        <ProductCollection
         image={Img4}
-        title={'Wallet Tracking'}
-        text={'SHOP NOW'}
+        title={<span style={{ color: '#F5F5F5' }}>{'Wallet Tracking'}</span>}
+        text={<span style={{ color: '#FF6F00' }}>{'SHOP NOW'}</span>} 
         link={'/shop'}
       />
        <ProductCollection
         image={Img5}
-        title={'Luggage Tracking  '}
-        text={'SHOP NOW'}
+        title={<span style={{ color: '#F5F5F5' }}>{'Luggage Tracking  '}</span>}
+        text={<span style={{ color: '#FF6F00' }}>{'SHOP NOW'}</span>}  
         link={'/shop'}
       />
        <ProductCollection
         image={Img6}
-        title={'Bicycle Tracking '}
-        text={'SHOP NOW'}
+        title={<span style={{ color: '#F5F5F5' }}>{'Bicycle Tracking '}</span>}
+        text={<span style={{ color: '#FF6F00' }}>{'SHOP NOW'}</span>} 
         link={'/shop'}
       />
     </div>
