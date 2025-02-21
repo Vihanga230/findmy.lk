@@ -100,7 +100,7 @@ const AboutPage = (props) => {
 <div ref={valuesRef}>
   
   
-  <h4>Our Values</h4>
+
   <p>
     <strong>Trust</strong> – We give you Apple Find My-compatible trackers with reliability in mind, ensuring you never lose what matters. Stay connected with secure, precise tracking every time.
   </p>

@@ -1,8 +1,12 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;600&display=swap');
+
+/* Root container styling */
 .root {
     width: 100%;
 }
 
-/* special case with the image */
+/* Special case with the image */
 .root > div {
     background-position: right;
 }
@@ -23,6 +27,11 @@
     scrollbar-width: none;  /* Firefox */
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.navContainer::-webkit-scrollbar {
+    display: none;
+}
+
 .navContainer > div:first-child {
     margin-left: auto;
 }
@@ -37,8 +46,8 @@
     margin-top: 164px;
 }
 
-.detailContainer p{
-    font-family: var(--standard-header);
+.detailContainer p {
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 42px;
     line-height: 50px;
@@ -61,14 +70,16 @@
     gap: 80px 0px;
 }
 
-.content h3{
-    font-weight: normal;
+.content h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     font-size: 52px;
     line-height: 62px;
     margin-right: 40px;
 }
 
 .content p {
+    font-family: 'Open Sans', sans-serif;
     font-weight: normal;
     font-size: 16px;
     line-height: 26px;
@@ -87,7 +98,7 @@
 }
 
 .content ol li {
-    font-family: var(--standard-header);
+    font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     font-size: 32px;
     line-height: 52px;
@@ -97,17 +108,70 @@
     margin-bottom: 32px;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.navContainer::-webkit-scrollbar {
-    display: none;
+/* Installation Guide Styles */
+.installationGuide {
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.installationGuide h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.installationGuide h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #444;
+    margin-top: 20px;
+}
+
+.installationGuide h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+    margin-top: 15px;
+}
+
+.installationGuide p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.installationGuide ul {
+    padding-left: 20px;
+}
+
+.installationGuide ul li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 8px;
+    list-style: disc;
+}
+
+.installationGuide strong {
+    color: #222;
+    font-weight: 600;
+}
+
+/* Responsive Adjustments */
 @media (max-width:1050px) {
     .content img {
         width: 100%;
     }
 
-    .content h3{
+    .content h3 {
         margin-right: 24px;
     }
 }
@@ -118,7 +182,7 @@
         gap: 24px 0px;
     }
 
-    .content h3{ 
+    .content h3 { 
         font-size: 32px;
         line-height: 38px;
     }
@@ -128,7 +192,7 @@
         line-height: 42px;
     }
 
-    .detailContainer p{
+    .detailContainer p {
         font-size: 22px;
         line-height: 28px;
     }
@@ -145,6 +209,10 @@
 
     .detailContainer {
         margin-top: 32px;
+    }
+
+    .installationGuide {
+        padding: 24px;
     }
 }
 
